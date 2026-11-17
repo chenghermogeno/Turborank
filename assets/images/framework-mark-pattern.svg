@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="tr-fw-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea6c40"/>
+      <stop offset="100%" stop-color="#e94c6c"/>
+    </linearGradient>
+    <pattern id="tr-fw-mark-grid" width="200" height="200" patternUnits="userSpaceOnUse">
+      <g transform="translate(6, 6)">
+        <rect width="88" height="88" rx="16" fill="url(#tr-fw-grad)"/>
+        <g transform="translate(44, 44)" fill="#121212">
+          <path d="M0 -19 L13 4 H6 V12 H-6 V4 H-13 Z"/>
+          <rect x="-16" y="13" width="4" height="12" rx="1"/>
+          <rect x="-7" y="13" width="4" height="20" rx="1"/>
+          <rect x="3" y="13" width="4" height="20" rx="1"/>
+          <rect x="12" y="13" width="4" height="12" rx="1"/>
+        </g>
+      </g>
+      <g transform="translate(106, 6)">
+        <rect width="88" height="88" rx="16" fill="url(#tr-fw-grad)"/>
+        <g transform="translate(44, 44)" fill="#121212">
+          <path d="M0 -19 L13 4 H6 V12 H-6 V4 H-13 Z"/>
+          <rect x="-16" y="13" width="4" height="12" rx="1"/>
+          <rect x="-7" y="13" width="4" height="20" rx="1"/>
+          <rect x="3" y="13" width="4" height="20" rx="1"/>
+          <rect x="12" y="13" width="4" height="12" rx="1"/>
+        </g>
+      </g>
+      <g transform="translate(56, 106)">
+        <rect width="88" height="88" rx="16" fill="url(#tr-fw-grad)"/>
+        <g transform="translate(44, 44)" fill="#121212">
+          <path d="M0 -19 L13 4 H6 V12 H-6 V4 H-13 Z"/>
+          <rect x="-16" y="13" width="4" height="12" rx="1"/>
+          <rect x="-7" y="13" width="4" height="20" rx="1"/>
+          <rect x="3" y="13" width="4" height="20" rx="1"/>
+          <rect x="12" y="13" width="4" height="12" rx="1"/>
+        </g>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="200" height="200" fill="url(#tr-fw-mark-grid)"/>
+</svg>

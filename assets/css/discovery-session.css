@@ -1,0 +1,529 @@
+/* Discovery Session landing — hero (mockup section 1) */
+
+.tr-dsession-intro h2 {
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-size: clamp(2.35rem, 5vw, 3.55rem);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	line-height: 1.08;
+	margin: 0 0 1.35rem;
+	color: #121212;
+}
+
+.tr-dsession-hero {
+	border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+	background-color: #f6f1e7 !important;
+	color: #121212;
+}
+
+.tr-dsession {
+	--tr-dsession-check: #ff9b85;
+	--tr-dsession-section-max: min(100%, 1080px);
+}
+
+.tr-dsession .tr-hero-checklist .tr-check-mark {
+	color: var(--tr-dsession-check);
+}
+
+.tr-dsession-hero .tr-eyebrow {
+	margin-bottom: 1.15rem;
+}
+
+.tr-dsession-title-plain {
+	color: #121212;
+}
+
+.tr-dsession-hero .tr-em {
+	color: #f16a4e;
+}
+
+.tr-dsession-lead {
+	color: #595c66;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 1.05rem;
+	line-height: 1.55;
+	margin: 0 0 0.85rem;
+	max-width: 36rem;
+	text-wrap: pretty;
+}
+
+.tr-dsession-hero .tr-hero-checklist {
+	color: #121212;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 1.05rem;
+	line-height: 1.5;
+	margin: 0 0 1.35rem;
+}
+
+.tr-dsession-hero .tr-hero-checklist li:first-child .tr-check-text {
+	flex-shrink: 0;
+	min-width: max-content;
+	white-space: nowrap;
+}
+
+@media (max-width: 781px) {
+	.tr-dsession-hero .tr-hero-checklist li:first-child .tr-check-text {
+		flex-shrink: 1;
+		min-width: 0;
+		white-space: normal;
+	}
+}
+
+.tr-dsession-meta {
+	color: #4f525c;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.85rem;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.tr-dsession-split {
+	width: 100%;
+	max-width: var(--tr-dsession-section-max);
+	grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+	align-items: center;
+	gap: clamp(2rem, 4vw, 3.5rem);
+}
+
+.tr-dsession-prepared {
+	align-self: end;
+	align-items: center;
+	background: #1a1d24;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+	display: flex;
+	gap: 0.85rem;
+	justify-self: end;
+	margin-left: auto;
+	box-sizing: border-box;
+	height: 8rem;
+	min-height: 8rem;
+	max-width: 22rem;
+	padding: 0.875rem 1.35rem;
+	width: 100%;
+}
+
+.tr-dsession-prepared__photo {
+	border-radius: 999px;
+	display: block;
+	flex-shrink: 0;
+	height: 52px;
+	object-fit: cover;
+	width: 52px;
+}
+
+.tr-dsession-prepared__text {
+	color: rgba(255, 255, 255, 0.9);
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.82rem;
+	line-height: 1.5;
+	margin: 0;
+	text-wrap: pretty;
+}
+
+@media (max-width: 781px) {
+	.tr-dsession-split {
+		grid-template-columns: 1fr;
+	}
+
+	.tr-dsession-prepared {
+		justify-self: stretch;
+		margin-left: 0;
+		max-width: none;
+	}
+}
+
+/* Booking — sections 01 & 02 */
+
+.tr-dsession-booking {
+	--tr-dsession-aside-width: 320px;
+	--tr-dsession-layout-gap: clamp(1rem, 2vw, 1.5rem);
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+}
+
+.tr-dsession-booking__layout {
+	display: grid;
+	width: 100%;
+	max-width: var(--tr-dsession-section-max, min(100%, 1080px));
+	grid-template-columns: minmax(0, 1fr) minmax(0, var(--tr-dsession-aside-width));
+	gap: var(--tr-dsession-layout-gap);
+	align-items: start;
+	justify-content: start;
+}
+
+.tr-dsession-booking-form-wrap.tr-form-card {
+	width: 100%;
+	max-width: none;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid rgba(18, 20, 24, 0.1);
+	border-radius: 8px;
+	padding: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+.tr-dsession-booking-aside {
+	max-width: var(--tr-dsession-aside-width);
+	width: 100%;
+}
+
+.tr-dsession-step + .tr-dsession-step {
+	margin-top: 2.25rem;
+	padding-top: 2.25rem;
+	border-top: 1px solid rgba(18, 20, 24, 0.08);
+}
+
+.tr-dsession-step__head {
+	display: flex;
+	align-items: baseline;
+	gap: 0.75rem;
+	margin-bottom: 0.35rem;
+}
+
+.tr-dsession-step__num {
+	color: #c8361f;
+	display: inline-block;
+	flex-shrink: 0;
+	font-size: 0.9rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.tr-dsession-step h2 {
+	color: #121418;
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-size: clamp(1.55rem, 2.5vw, 1.85rem);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	line-height: 1.12;
+	margin: 0;
+}
+
+.tr-dsession-step__hint {
+	color: #3c4048;
+	font-size: 0.88rem;
+	line-height: 1.55;
+	margin: 0 0 1.25rem;
+}
+
+.tr-dsession-booking-form label:not(.tr-dsession-sms) {
+	color: #121418;
+	display: block;
+	font-size: 0.75rem;
+	font-weight: 700;
+	margin: 1rem 0 0.4rem;
+}
+
+.tr-dsession-form__row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.75rem;
+}
+
+.tr-dsession-form__row label {
+	margin-top: 0;
+}
+
+.tr-dsession-form__row + .tr-dsession-form__row {
+	margin-top: 0;
+}
+
+.tr-dsession-form__row:first-of-type label {
+	margin-top: 0;
+}
+
+.tr-dsession-booking-form .tr-required {
+	color: #c8361f !important;
+	font-weight: 700;
+}
+
+.tr-dsession-booking-form input,
+.tr-dsession-booking-form textarea {
+	background: #fff;
+	border: 1px solid rgba(18, 20, 24, 0.16);
+	border-radius: 6px;
+	box-sizing: border-box;
+	color: #121418;
+	font: inherit;
+	font-size: 0.875rem;
+	padding: 0.75rem 0.85rem;
+	width: 100%;
+}
+
+.tr-dsession-booking-form input::placeholder,
+.tr-dsession-booking-form textarea::placeholder {
+	color: #595c66;
+	opacity: 1;
+}
+
+.tr-dsession-booking-form input:focus,
+.tr-dsession-booking-form textarea:focus {
+	border-color: transparent;
+	outline: 2px solid #c8361f;
+}
+
+.tr-dsession-booking-form textarea {
+	min-height: 7.5rem;
+	resize: vertical;
+}
+
+.tr-dsession-sms {
+	align-items: flex-start;
+	color: #3c4048;
+	cursor: pointer;
+	display: flex;
+	font-size: 0.78rem;
+	font-weight: 400;
+	gap: 0.55rem;
+	line-height: 1.5;
+	margin: 1.1rem 0 0;
+}
+
+.tr-dsession-sms input {
+	flex-shrink: 0;
+	margin-top: 0.15rem;
+	width: auto;
+}
+
+.tr-dsession-step--schedule {
+	--tr-dsession-slot-border: #d1d5db;
+	--tr-dsession-slot-text: #121418;
+	--tr-dsession-slot-selected-bg: #fdf2f0;
+	--tr-dsession-slot-selected-border: #c8361f;
+	--tr-dsession-slot-selected-text: #c8361f;
+}
+
+.tr-dsession-schedule-picker {
+	margin-top: 0.15rem;
+}
+
+.tr-dsession-slot-day {
+	color: #121418;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 0 0 0.75rem;
+}
+
+.tr-dsession-slots {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 0.5rem;
+	width: 100%;
+}
+
+/* Scope beats .tr-form-card button (primary submit styling). */
+.tr-dsession-booking-form-wrap.tr-form-card .tr-dsession-slot {
+	align-items: center;
+	background: #fff;
+	border: 1px solid var(--tr-dsession-slot-border);
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: var(--tr-dsession-slot-text);
+	cursor: pointer;
+	display: flex;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.875rem;
+	font-weight: 400;
+	justify-content: center;
+	line-height: 1.2;
+	margin-top: 0;
+	min-height: 2.875rem;
+	padding: 0.85rem 0.5rem;
+	text-align: center;
+	transition:
+		background 0.15s ease,
+		border-color 0.15s ease,
+		border-width 0.15s ease,
+		color 0.15s ease;
+}
+
+.tr-dsession-booking-form-wrap.tr-form-card .tr-dsession-slot:hover:not(.is-selected),
+.tr-dsession-booking-form-wrap.tr-form-card .tr-dsession-slot:focus-visible:not(.is-selected) {
+	background: #fff;
+	border-color: #9ca3af;
+	color: var(--tr-dsession-slot-text);
+	outline: none;
+}
+
+.tr-dsession-booking-form-wrap.tr-form-card .tr-dsession-slot.is-selected,
+.tr-dsession-booking-form-wrap.tr-form-card .tr-dsession-slot.is-selected:hover,
+.tr-dsession-booking-form-wrap.tr-form-card .tr-dsession-slot.is-selected:focus-visible {
+	background: var(--tr-dsession-slot-selected-bg);
+	border: 2px solid var(--tr-dsession-slot-selected-border);
+	color: var(--tr-dsession-slot-selected-text);
+	font-weight: 700;
+	outline: none;
+	padding: calc(0.85rem - 1px) calc(0.5rem - 1px);
+}
+
+.tr-dsession-text-link {
+	color: #c8361f !important;
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.tr-dsession-text-link:hover,
+.tr-dsession-text-link:focus-visible {
+	color: #a52e19 !important;
+}
+
+.tr-dsession-more-days {
+	display: inline-block;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.78rem;
+	line-height: 1.55;
+	margin: 0.85rem 0 0;
+}
+
+.tr-dsession-booking-form-wrap.tr-form-card .tr-dsession-submit {
+	background: #c8361f;
+	border: 0;
+	border-radius: 6px;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: 1.25;
+	margin-top: 1.5rem;
+	padding: 1rem 1.1rem;
+	width: 100%;
+}
+
+.tr-dsession-booking-form-wrap.tr-form-card .tr-dsession-submit:hover,
+.tr-dsession-booking-form-wrap.tr-form-card .tr-dsession-submit:focus-visible {
+	background: var(--tr-accent-hover, #ea6c40);
+}
+
+.tr-dsession-slots[data-invalid='true'] {
+	outline: 2px solid #c8361f;
+	outline-offset: 4px;
+	border-radius: 8px;
+}
+
+.tr-dsession-booking-note {
+	color: #595c66;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.78rem;
+	line-height: 1.55;
+	margin: 0.85rem 0 0;
+	max-width: 36rem;
+	text-align: left;
+	text-wrap: pretty;
+}
+
+.tr-dsession-after-book {
+	background: #121317;
+	border-radius: 8px;
+	color: #fff;
+	margin-bottom: 1rem;
+	padding: 1.35rem 1.25rem 1.45rem;
+}
+
+.tr-dsession-after-book__eyebrow {
+	color: var(--tr-dsession-check, #ff9b85);
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	margin: 0 0 0.55rem;
+}
+
+.tr-dsession-after-book h3 {
+	color: #fff;
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-size: 1.35rem;
+	font-weight: 500;
+	letter-spacing: -0.02em;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.tr-dsession-after-book__details {
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	margin-top: 1rem;
+}
+
+.tr-dsession-after-book__details p {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+	color: rgba(255, 255, 255, 0.92);
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.82rem;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0.85rem 0;
+	text-wrap: pretty;
+}
+
+.tr-dsession-after-book__details .tr-keep-together {
+	white-space: nowrap;
+}
+
+.tr-dsession-not-ready {
+	background: #fff;
+	border: 1px solid rgba(18, 20, 24, 0.1);
+	border-radius: 8px;
+	margin-bottom: 1rem;
+	padding: 1.25rem 1.2rem;
+}
+
+.tr-dsession-not-ready h3 {
+	color: #121418;
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-size: 1.15rem;
+	font-weight: 500;
+	margin: 0 0 0.55rem;
+}
+
+.tr-dsession-not-ready p {
+	color: #3c4048;
+	font-size: 0.85rem;
+	line-height: 1.55;
+	margin: 0;
+}
+
+.tr-dsession-not-ready a,
+.tr-dsession-sample-link a {
+	color: #c8361f !important;
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.tr-dsession-sample-link {
+	margin: 0;
+}
+
+.tr-dsession-sample-link a {
+	font-size: 0.85rem;
+}
+
+.tr-dsession-booking .tr-form-status {
+	margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+	.tr-dsession-booking__layout {
+		grid-template-columns: 1fr;
+		justify-content: stretch;
+	}
+
+	.tr-dsession-booking-form-wrap.tr-form-card,
+	.tr-dsession-booking-aside {
+		max-width: none;
+		justify-self: stretch;
+	}
+
+	.tr-dsession-slots {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 600px) {
+	.tr-dsession-form__row {
+		grid-template-columns: 1fr;
+	}
+}

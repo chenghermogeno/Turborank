@@ -1,0 +1,2145 @@
+/* Service pages — AI Discovery layout (Figma 9:990), shared by YouTube Discovery and Brand Authority */
+
+:root {
+	--tr-section-warm: #f6f1e7;
+}
+
+.tr-service h2 {
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	line-height: 1.08;
+	margin: 0 0 1rem;
+	font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+	margin-top: 0;
+}
+
+.tr-service-hero h2 {
+	font-size: clamp(2.35rem, 5vw, 3.55rem);
+	color: #121212;
+}
+
+.tr-service-hero {
+	border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+	background-color: var(--tr-section-warm) !important;
+	color: #121212;
+}
+
+/* AI Discovery — centered hero (headline, lead, monitor, CTAs) */
+.tr-service-hero.tr-service-hero--centered {
+	text-align: center;
+}
+
+.tr-service-hero--centered > .tr-crumb {
+	text-align: left;
+	width: 100%;
+}
+
+.tr-service-hero--centered .tr-eyebrow {
+	margin-bottom: 1.15rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+}
+
+.tr-service-hero--centered .tr-service-hero__stack {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0;
+}
+
+.tr-service-hero--centered h2 {
+	margin-bottom: 1.35rem;
+	line-height: 1.06;
+}
+
+.tr-service-hero--centered h2 .tr-service-hero__title-line {
+	display: block;
+}
+
+.tr-service-hero--centered .tr-lead {
+	color: #a6a8b1;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.95rem;
+	max-width: 38rem;
+	margin: 0 auto 2rem;
+	text-wrap: pretty;
+}
+
+.tr-service-hero--centered .tr-lead-badge {
+	border: 1px solid rgba(212, 168, 83, 0.55);
+	border-radius: 999px;
+	color: #d4a853;
+	display: inline-block;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.62rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	line-height: 1;
+	margin-left: 0.4rem;
+	padding: 0.28rem 0.5rem;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.tr-service-hero--centered .tr-monitor {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 2rem;
+	text-align: left;
+}
+
+.tr-service-hero--centered .tr-monitor.tr-monitor--hero-snapshot {
+	max-width: min(100%, 750px);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tr-monitor.tr-monitor--hero-snapshot th,
+.tr-monitor.tr-monitor--hero-snapshot td:not(.is-cited),
+.tr-monitor.tr-monitor--hero-snapshot .tr-monitor__note {
+	color: #ffffff;
+}
+
+.tr-monitor.tr-monitor--hero-snapshot td.is-none {
+	color: #ffffff;
+}
+
+.tr-service-hero--centered .tr-hero-cta-row {
+	justify-content: center;
+	width: 100%;
+	margin-top: 0;
+}
+
+.tr-service-hero--centered .tr-hero-cta-row .tr-btn-row {
+	justify-content: center;
+}
+
+.tr-service-hero--centered .tr-service-hero__contact {
+	margin-top: 0.85rem;
+	text-align: center;
+	white-space: normal;
+}
+
+.tr-service-hero--centered .tr-service-hero__contact a {
+	font-weight: 700 !important;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+/* First-section hero band */
+.tr-about-hero,
+.tr-faq-page.tr-faq-hero,
+.tr-results-hero,
+.tr-insights-hero,
+.tr-author-profile-hero,
+.tr-dsnap-page-wrap,
+.tr-dsession.tr-dsession-hero,
+.tr-blog-longform-hero {
+	background-color: var(--tr-section-warm) !important;
+	color: #121212;
+}
+
+.tr-contact-hero {
+	background-color: var(--tr-section-warm) !important;
+	color: #121212;
+}
+
+/* First hero inset matches site header; top padding stays at 72px for main content */
+.tr-service-hero,
+.tr-about-hero,
+.tr-contact-hero,
+.tr-faq-page.tr-faq-hero,
+.tr-results-hero,
+.tr-insights-hero,
+.tr-insights-feed,
+.tr-author-articles,
+.tr-author-profile-hero,
+.tr-insights.tr-insight-article {
+	padding-left: var(--wp--preset--spacing--30, 20px) !important;
+	padding-right: var(--wp--preset--spacing--30, 20px) !important;
+}
+
+/* Cards / graphs in the right column of page heroes */
+.tr-service-hero .tr-monitor,
+.tr-about-hero .tr-glance,
+.tr-contact-hero .tr-contact-card,
+.tr-author-profile-hero .tr-glance {
+	background: #1a1c23;
+}
+
+.tr-service h3 {
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-weight: 600;
+	letter-spacing: -0.01em;
+}
+
+.tr-service-close h2 {
+	max-width: min(32rem, 100%);
+}
+
+/* Closing CTA band (Figma) — margins match other service *-inner sections */
+.tr-service.tr-service-close {
+	text-align: left;
+	color: #121212;
+	background-color: var(--tr-section-warm) !important;
+	padding-top: var(--wp--preset--spacing--70, 96px) !important;
+	padding-bottom: var(--wp--preset--spacing--70, 96px) !important;
+}
+
+.tr-service.tr-service-close > .wp-block-html {
+	width: 100%;
+	max-width: 1080px;
+	margin-left: 0 !important;
+	margin-right: auto !important;
+	box-sizing: border-box;
+}
+
+.tr-service.tr-service-close .tr-close-inner {
+	margin-left: 0;
+	margin-right: auto;
+	width: 100%;
+}
+
+.tr-service.tr-service-close .tr-close-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.tr-service.tr-service-close .tr-close-grid > h2,
+.tr-service.tr-service-close .tr-close-heading h2 {
+	flex: 0 1 auto;
+	min-width: 0;
+	margin: 0;
+	max-width: min(40rem, 100%);
+	color: #121212 !important;
+	text-align: left;
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	font-size: clamp(2.25rem, 4.5vw, 3.55rem) !important;
+	line-height: 1.08 !important;
+}
+
+.tr-service.tr-service-close .tr-close-heading {
+	flex: 0 1 auto;
+	min-width: 0;
+	max-width: min(40rem, 100%);
+}
+
+.tr-service.tr-service-close .tr-close-lead {
+	margin: 0.75rem 0 0;
+	color: #595c66;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 1rem;
+	line-height: 1.55;
+	max-width: 28rem;
+	text-wrap: pretty;
+}
+
+.tr-service.tr-service-close .tr-close-actions {
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: column;
+	align-items: center;
+	width: max-content;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: 0;
+	gap: 1rem;
+}
+
+.tr-service.tr-service-close .tr-close-actions .tr-btn-row {
+	justify-content: center;
+	width: auto;
+}
+
+.tr-service.tr-service-close .tr-close-contact {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	box-sizing: border-box;
+	gap: 0.75rem 2rem;
+	margin: 0;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.85rem;
+	line-height: 1.5;
+}
+
+.tr-service.tr-service-close .tr-close-contact a {
+	color: #b8321b !important;
+	font-weight: 700 !important;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.tr-service.tr-service-close .tr-close-contact a:hover,
+.tr-service.tr-service-close .tr-close-contact a:focus-visible {
+	color: #f16a4e !important;
+}
+
+/* Light close band (e.g. Results) — warm field, dark type, accent links */
+.tr-service.tr-service-close.tr-service-close--light {
+	background-color: var(--tr-section-warm) !important;
+	color: #121212;
+}
+
+.tr-service.tr-service-close.tr-service-close--light .tr-close-grid > h2,
+.tr-service.tr-service-close.tr-service-close--light .tr-close-heading h2 {
+	color: #121212 !important;
+}
+
+.tr-service.tr-service-close.tr-service-close--light .tr-close-lead {
+	color: #595c66;
+}
+
+.tr-service.tr-service-close .tr-close-lead .tr-lead-badge {
+	border: 1px solid rgba(212, 168, 83, 0.55);
+	border-radius: 999px;
+	color: #d4a853;
+	display: inline-block;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.62rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	line-height: 1;
+	margin-left: 0.4rem;
+	padding: 0.28rem 0.5rem;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.tr-service.tr-service-close.tr-service-close--light .tr-close-contact a {
+	color: #b8321b !important;
+}
+
+.tr-service.tr-service-close.tr-service-close--light .tr-close-contact a:hover,
+.tr-service.tr-service-close.tr-service-close--light .tr-close-contact a:focus-visible {
+	color: #f16a4e !important;
+}
+
+@media (min-width: 901px) {
+	.tr-service.tr-service-close .tr-close-grid {
+		display: grid;
+		grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+		align-items: center;
+		column-gap: clamp(3rem, 6vw, 5rem);
+	}
+
+	.tr-service.tr-service-close .tr-close-heading {
+		max-width: none;
+	}
+
+	.tr-service.tr-service-close .tr-close-actions {
+		margin-left: auto;
+		margin-right: 0;
+		justify-self: end;
+		align-self: center;
+		width: max-content;
+		max-width: 100%;
+		align-items: center;
+	}
+
+	.tr-service.tr-service-close .tr-close-actions .tr-btn-row {
+		justify-content: center;
+		width: auto;
+	}
+
+	.tr-service.tr-service-close .tr-close-contact {
+		justify-content: center;
+	}
+}
+
+.tr-em {
+	font-style: italic;
+	font-weight: 500;
+	color: #f16a4e;
+}
+
+.tr-crumb {
+	font-size: 0.72rem;
+	letter-spacing: 0.04em;
+	margin: 0 0 1.25rem;
+	/* Visual-only shift up; hero eyebrow/title keep original spacing below nav */
+	position: relative;
+	top: calc(1.75rem - 72px);
+}
+
+.tr-crumb__prefix,
+.tr-crumb__prefix a {
+	color: #a6a8b1;
+	font-weight: 400;
+}
+
+.tr-crumb__prefix a {
+	text-decoration: none;
+	transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.tr-crumb__prefix a:hover,
+.tr-crumb__prefix a:focus-visible {
+	color: #ffffff !important;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.tr-crumb__trail,
+.tr-crumb__trail a {
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.tr-crumb__trail a {
+	color: #ffffff !important;
+	text-decoration: none;
+	transition: text-decoration-color 0.15s ease;
+}
+
+.tr-crumb__trail a:hover,
+.tr-crumb__trail a:focus-visible {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+/* Warm hero bands — breadcrumbs and contact (inline bg is #f6f1e7) */
+.tr-service-hero .tr-crumb__prefix,
+.tr-service-hero .tr-crumb__prefix a,
+.tr-about-hero .tr-crumb__prefix,
+.tr-about-hero .tr-crumb__prefix a,
+.tr-contact-hero .tr-crumb__prefix,
+.tr-contact-hero .tr-crumb__prefix a,
+.tr-faq-page.tr-faq-hero .tr-crumb__prefix,
+.tr-faq-page.tr-faq-hero .tr-crumb__prefix a,
+.tr-results-hero .tr-crumb__prefix,
+.tr-results-hero .tr-crumb__prefix a,
+.tr-insights-hero .tr-crumb__prefix,
+.tr-insights-hero .tr-crumb__prefix a,
+.tr-author-profile-hero .tr-crumb__prefix,
+.tr-author-profile-hero .tr-crumb__prefix a,
+.tr-dsession.tr-dsession-hero .tr-crumb__prefix,
+.tr-dsession.tr-dsession-hero .tr-crumb__prefix a,
+.tr-blog-longform-hero .tr-crumb__prefix,
+.tr-blog-longform-hero .tr-crumb__prefix a {
+	color: #6b7280;
+}
+
+.tr-service-hero .tr-crumb__prefix a:hover,
+.tr-service-hero .tr-crumb__prefix a:focus-visible,
+.tr-about-hero .tr-crumb__prefix a:hover,
+.tr-about-hero .tr-crumb__prefix a:focus-visible,
+.tr-contact-hero .tr-crumb__prefix a:hover,
+.tr-contact-hero .tr-crumb__prefix a:focus-visible,
+.tr-faq-page.tr-faq-hero .tr-crumb__prefix a:hover,
+.tr-faq-page.tr-faq-hero .tr-crumb__prefix a:focus-visible,
+.tr-results-hero .tr-crumb__prefix a:hover,
+.tr-results-hero .tr-crumb__prefix a:focus-visible,
+.tr-insights-hero .tr-crumb__prefix a:hover,
+.tr-insights-hero .tr-crumb__prefix a:focus-visible,
+.tr-author-profile-hero .tr-crumb__prefix a:hover,
+.tr-author-profile-hero .tr-crumb__prefix a:focus-visible,
+.tr-dsession.tr-dsession-hero .tr-crumb__prefix a:hover,
+.tr-dsession.tr-dsession-hero .tr-crumb__prefix a:focus-visible,
+.tr-blog-longform-hero .tr-crumb__prefix a:hover,
+.tr-blog-longform-hero .tr-crumb__prefix a:focus-visible {
+	color: #121212 !important;
+}
+
+.tr-service-hero .tr-crumb__trail,
+.tr-service-hero .tr-crumb__trail a,
+.tr-about-hero .tr-crumb__trail,
+.tr-about-hero .tr-crumb__trail a,
+.tr-contact-hero .tr-crumb__trail,
+.tr-contact-hero .tr-crumb__trail a,
+.tr-faq-page.tr-faq-hero .tr-crumb__trail,
+.tr-faq-page.tr-faq-hero .tr-crumb__trail a,
+.tr-results-hero .tr-crumb__trail,
+.tr-results-hero .tr-crumb__trail a,
+.tr-insights-hero .tr-crumb__trail,
+.tr-insights-hero .tr-crumb__trail a,
+.tr-author-profile-hero .tr-crumb__trail,
+.tr-author-profile-hero .tr-crumb__trail a,
+.tr-dsession.tr-dsession-hero .tr-crumb__trail,
+.tr-dsession.tr-dsession-hero .tr-crumb__trail a,
+.tr-blog-longform-hero .tr-crumb__trail,
+.tr-blog-longform-hero .tr-crumb__trail a {
+	color: #121212;
+	font-weight: 700;
+}
+
+.tr-service-hero .tr-crumb__trail a,
+.tr-about-hero .tr-crumb__trail a,
+.tr-contact-hero .tr-crumb__trail a,
+.tr-faq-page.tr-faq-hero .tr-crumb__trail a,
+.tr-results-hero .tr-crumb__trail a,
+.tr-insights-hero .tr-crumb__trail a,
+.tr-author-profile-hero .tr-crumb__trail a,
+.tr-dsession.tr-dsession-hero .tr-crumb__trail a,
+.tr-blog-longform-hero .tr-crumb__trail a {
+	color: #121212 !important;
+}
+
+.tr-service-hero--centered .tr-service-hero__contact {
+	color: #595c66;
+}
+
+.tr-service-hero--centered .tr-service-hero__contact a {
+	color: #b8321b !important;
+}
+
+.tr-service-hero--centered .tr-service-hero__contact a:hover,
+.tr-service-hero--centered .tr-service-hero__contact a:focus-visible {
+	color: #f16a4e !important;
+}
+
+.tr-service-hero .tr-lead,
+.tr-about-hero .tr-lead,
+.tr-contact-hero .tr-lead,
+.tr-faq-page.tr-faq-hero .tr-lead,
+.tr-results-hero .tr-lead,
+.tr-insights-hero .tr-lead,
+.tr-author-profile-hero .tr-lead,
+.tr-dsession.tr-dsession-hero .tr-lead,
+.tr-blog-longform-hero .tr-lead {
+	color: #595c66;
+}
+
+.tr-service-hero .tr-btn-ghost .wp-block-button__link,
+.tr-about-hero .tr-btn-ghost .wp-block-button__link,
+.tr-contact-hero .tr-btn-ghost .wp-block-button__link,
+.tr-dsession.tr-dsession-hero .tr-btn-ghost .wp-block-button__link {
+	border-color: rgba(18, 18, 18, 0.28) !important;
+	color: #121212 !important;
+}
+
+.tr-eyebrow {
+	color: #f16a4e;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	margin: 0 0 0.75rem;
+}
+
+h1.tr-eyebrow {
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-weight: inherit;
+	line-height: 1.25;
+}
+
+.tr-lead {
+	color: #a6a8b1;
+	font-size: 0.95rem;
+	line-height: 1.6;
+	max-width: 38rem;
+}
+
+.tr-service .tr-btn-ghost .wp-block-button__link {
+	border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.tr-split {
+	display: grid;
+	grid-template-columns: 1.05fr 0.95fr;
+	gap: 2.5rem 3rem;
+	align-items: start;
+}
+
+.tr-prose p {
+	color: #a6a8b1;
+	font-size: 0.95rem;
+	line-height: 1.65;
+	margin: 0 0 0.9rem;
+}
+
+.tr-aside h3 {
+	font-size: 1.25rem !important;
+	line-height: 1.3 !important;
+	margin: 0 0 1.1rem;
+}
+
+.tr-aside-item {
+	margin: 0 0 1rem;
+}
+
+.tr-aside-item strong {
+	display: block;
+	font-size: 0.9rem;
+	margin-bottom: 0.2rem;
+}
+
+.tr-aside-item p {
+	margin: 0;
+	color: #a6a8b1;
+	font-size: 0.82rem;
+	line-height: 1.5;
+}
+
+/* “What is …?” — light editorial split (Figma) */
+.tr-service-about {
+	border-top: 1px solid rgba(18, 20, 24, 0.06);
+}
+
+.tr-split--about {
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: 3rem 4.5rem;
+	align-items: start;
+}
+
+.tr-service-about .tr-prose h2 {
+	margin-bottom: 1.35rem;
+	color: #121418;
+}
+
+.tr-service-about .tr-prose p {
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.65;
+	color: #4a4a4a;
+	max-width: 36rem;
+}
+
+.tr-service-about .tr-aside__rule {
+	border: 0;
+	border-top: 2px solid #121418;
+	margin: 0 0 1.75rem;
+	height: 0;
+}
+
+.tr-service-about .tr-aside h3 {
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	line-height: 1.25;
+	color: #121418;
+	margin: 0 0 1.65rem;
+}
+
+@media (max-width: 900px) {
+	.tr-service-about .tr-aside h3 br.tr-aside__line-break {
+		display: none;
+	}
+}
+
+.tr-service-about .tr-aside-item {
+	margin-bottom: 1.35rem;
+}
+
+.tr-service-about .tr-aside-item:last-child {
+	margin-bottom: 0;
+}
+
+.tr-service-about .tr-aside-item strong {
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.9375rem;
+	font-weight: 600;
+	color: #121418;
+	margin-bottom: 0.35rem;
+}
+
+.tr-service-about .tr-aside-item p {
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.9375rem;
+	line-height: 1.55;
+	color: #4a4a4a;
+}
+
+/* Prompt monitor */
+.tr-monitor {
+	background: #1a1c23;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 14px;
+	padding: 1rem 1rem 0.85rem;
+	color: #a6a8b1;
+	box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+}
+
+.tr-monitor__head {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.75rem;
+	align-items: center;
+	margin-bottom: 0.85rem;
+}
+
+.tr-monitor__head p {
+	margin: 0;
+	font-size: 0.72rem;
+	color: #a6a8b1;
+}
+
+.tr-monitor__badge {
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border-radius: 999px;
+	padding: 0.2rem 0.55rem;
+	font-size: 0.65rem;
+	color: #a6a8b1;
+	white-space: nowrap;
+}
+
+.tr-monitor table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.72rem;
+}
+
+.tr-monitor th {
+	text-align: left;
+	font-weight: 500;
+	color: #a6a8b1;
+	padding: 0.35rem 0.3rem 0.55rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tr-monitor td {
+	padding: 0.7rem 0.3rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	vertical-align: top;
+	line-height: 1.35;
+}
+
+.tr-monitor td.is-cited {
+	color: #f16a4e;
+	font-weight: 600;
+}
+
+.tr-monitor td.is-none {
+	color: #a6a8b1;
+}
+
+.tr-monitor__note {
+	margin: 0.75rem 0 0.15rem;
+	font-size: 0.68rem;
+	color: #a6a8b1;
+}
+
+.tr-stats {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.75rem;
+	margin-top: 2rem;
+}
+
+.tr-stat__num {
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-size: clamp(2rem, 3.5vw, 2.75rem);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	color: #f16a4e;
+	line-height: 1;
+	margin: 0 0 0.75rem;
+}
+
+.tr-stat p {
+	margin: 0;
+	color: #a6a8b1;
+	font-size: 0.85rem;
+	line-height: 1.5;
+}
+
+.tr-source {
+	display: inline-block;
+	margin-top: 0.65rem;
+	color: #a6a8b1;
+	font-size: 0.72rem;
+}
+
+/* Dark “Why” stats block (service pages — AI Discovery layout) */
+.tr-service.tr-ai-why-section {
+	text-align: left;
+}
+
+.tr-service.tr-ai-why-section .tr-ai-why-inner > h2,
+.tr-service.tr-ai-why-section .tr-ai-why-inner > .tr-ai-why-heading-row,
+.tr-service.tr-ai-why-section .tr-ai-why-inner .tr-ai-why-lead {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+/* YouTube Discovery — “Why…” heading + Kat claim pill */
+.tr-service.tr-ai-why-section .tr-ai-why-heading-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	column-gap: 0.65rem;
+	row-gap: 0.35rem;
+	margin: 0 0 1rem;
+}
+
+.tr-service.tr-ai-why-section .tr-ai-why-heading-row h2 {
+	margin: 0;
+	flex: 0 1 auto;
+	color: #121212;
+	max-width: none;
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	line-height: 1.08;
+}
+
+.tr-service.tr-ai-why-section .tr-ai-why-heading-row .tr-kat-claim-badge {
+	flex: 0 0 auto;
+	align-self: center;
+	display: inline-block;
+	padding: 0.25rem 0.75rem;
+	border-radius: 999px;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	line-height: 1.25;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	color: #1e3a8a;
+	background-color: #dbeafe;
+	vertical-align: baseline;
+}
+
+.tr-service.tr-ai-why-section h2 {
+	color: #121212;
+	max-width: none;
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	line-height: 1.08;
+	margin-bottom: 1rem;
+}
+
+.tr-service.tr-ai-why-section h2 .tr-ai-why-heading__line {
+	display: block;
+	max-width: 100%;
+	text-wrap: balance;
+}
+
+.tr-service.tr-ai-why-section .tr-ai-why-lead {
+	color: #595c66;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 1rem;
+	line-height: 1.65;
+	max-width: 42rem;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.tr-service.tr-ai-why-section .tr-ai-why-stats {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.75rem;
+	margin-top: 2.25rem;
+}
+
+.tr-service.tr-ai-why-section .tr-ai-why-stats .tr-stat {
+	border-top: 2px solid rgba(18, 18, 18, 0.12);
+	padding-top: 2rem;
+	box-sizing: border-box;
+}
+
+.tr-service.tr-ai-why-section .tr-stat p:not(.tr-stat__num) {
+	color: #3c4048;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.9rem;
+	line-height: 1.55;
+}
+
+.tr-service.tr-ai-why-section .tr-stat__num {
+	color: #d97757;
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-size: clamp(2.25rem, 4vw, 3.25rem);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	line-height: 1;
+	margin: 0 0 0.85rem;
+}
+
+.tr-service.tr-ai-why-section .tr-source {
+	display: inline-block;
+	margin-top: 0.75rem;
+	color: #6b7280;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.72rem;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.tr-service.tr-ai-why-section .tr-source:hover,
+.tr-service.tr-ai-why-section .tr-source:focus-visible {
+	color: #121212;
+}
+
+/* “How do we measure…?” — cream section + two metric cards (Figma) */
+.tr-service.tr-service-measure {
+	text-align: left;
+}
+
+.tr-service.tr-service-measure .tr-measure-inner > h2,
+.tr-service.tr-service-measure .tr-measure-inner > .tr-measure-lead {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.tr-service.tr-service-measure .tr-measure-lead {
+	max-width: 42rem;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #121418;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.95rem;
+	line-height: 1.65;
+	text-wrap: pretty;
+}
+
+.tr-service.tr-service-measure .tr-measure {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5rem;
+	margin-top: 2.25rem;
+	align-items: stretch;
+}
+
+.tr-service.tr-service-measure .tr-measure article {
+	background: #ffffff;
+	border: 1px solid rgba(18, 20, 24, 0.1);
+	border-radius: 12px;
+	padding: 1.75rem 1.65rem 1.85rem;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+.tr-service.tr-service-measure .tr-measure h3 {
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	font-size: clamp(1.35rem, 2.2vw, 1.55rem) !important;
+	line-height: 1.15 !important;
+	color: #121418;
+	margin: 0 0 0.75rem;
+}
+
+.tr-service.tr-service-measure .tr-measure p {
+	margin: 0;
+	color: #3c4048;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+
+/* “What does … include?” — mist grid + per-column rules (Figma) */
+.tr-service.tr-service-include {
+	text-align: left;
+}
+
+.tr-service.tr-service-include .tr-include-inner > h2,
+.tr-service.tr-service-include .tr-include-inner > .tr-include-lead {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.tr-service.tr-service-include .tr-include-lead {
+	max-width: 42rem;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #121418;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.95rem;
+	line-height: 1.65;
+}
+
+.tr-service.tr-service-include .tr-include {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	column-gap: 1.75rem;
+	row-gap: 2.25rem;
+	margin-top: 2.25rem;
+}
+
+.tr-service.tr-service-include .tr-include article {
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	border-top: 2px solid rgba(18, 20, 24, 0.12);
+	padding: 2rem 0 0;
+	box-sizing: border-box;
+}
+
+.tr-service.tr-service-include .tr-include h3 {
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-weight: 700;
+	font-size: 1.05rem !important;
+	line-height: 1.3 !important;
+	letter-spacing: -0.01em;
+	color: #121418;
+	margin: 0 0 0.65rem;
+}
+
+.tr-service.tr-service-include .tr-include p {
+	margin: 0;
+	color: #3c4048;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+
+.tr-service.tr-service-include .tr-include p a,
+.tr-service.tr-service-include .tr-include .tr-include-link {
+	color: #c8361f !important;
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.tr-service.tr-service-include .tr-include p a:hover,
+.tr-service.tr-service-include .tr-include p a:focus-visible,
+.tr-service.tr-service-include .tr-include .tr-include-link:hover,
+.tr-service.tr-service-include .tr-include .tr-include-link:focus-visible {
+	color: #a82d18 !important;
+}
+
+/* “What does the work look like?” — three-step cards (Figma) */
+.tr-service.tr-service-work {
+	text-align: left;
+}
+
+.tr-service.tr-service-work .tr-work-inner > h2,
+.tr-service.tr-service-work .tr-work-inner > .tr-work-lead,
+.tr-service.tr-service-work .tr-work-inner > .tr-note {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.tr-service.tr-service-work .tr-work-lead {
+	max-width: 42rem;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #121418;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.95rem;
+	line-height: 1.65;
+}
+
+.tr-service.tr-service-work .tr-steps {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.25rem;
+	margin-top: 2.25rem;
+	align-items: stretch;
+}
+
+.tr-service.tr-service-work .tr-step-card {
+	border-radius: 12px;
+	padding: 1.65rem 1.5rem 1.75rem;
+	box-sizing: border-box;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.tr-service.tr-service-work .tr-step-card.is-light {
+	background: #ffffff;
+	border: 1px solid rgba(18, 20, 24, 0.1);
+}
+
+.tr-service.tr-service-work .tr-step-card.is-dark {
+	background: #121212;
+	border: 0;
+	color: #ffffff;
+}
+
+.tr-service.tr-service-work .tr-kicker {
+	display: block;
+	margin: 0 0 0.85rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	color: #c8361f;
+}
+
+.tr-service.tr-service-work .tr-step-card.is-dark .tr-kicker {
+	color: #c8361f;
+}
+
+.tr-service.tr-service-work .tr-step-card h3 {
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	font-size: clamp(1.25rem, 2vw, 1.45rem) !important;
+	line-height: 1.15 !important;
+	margin: 0 0 0.75rem;
+	color: #121418;
+}
+
+.tr-service.tr-service-work .tr-step-card.is-dark h3 {
+	color: #ffffff !important;
+}
+
+.tr-service.tr-service-work .tr-step-card p {
+	margin: 0;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.9rem;
+	line-height: 1.6;
+	color: #3c4048;
+}
+
+.tr-service.tr-service-work .tr-step-card.is-dark p {
+	color: rgba(255, 255, 255, 0.72) !important;
+}
+
+.tr-service.tr-service-work .tr-note {
+	margin-top: 1.35rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.75rem;
+	line-height: 1.5;
+	color: #a6a8b1;
+}
+
+/* “Documented … citations” — dark proof grid (Figma) */
+.tr-service.tr-service-proof {
+	text-align: left;
+}
+
+.tr-service.tr-service-proof .tr-proof-inner > h2,
+.tr-service.tr-service-proof .tr-proof-inner > .tr-proof-heading-row,
+.tr-service.tr-service-proof .tr-proof-inner > .tr-proof-lead {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+/* AI Discovery — heading + Kat claim pill (matches homepage badge styles) */
+.tr-service.tr-service-proof .tr-proof-heading-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	column-gap: 0.65rem;
+	row-gap: 0.35rem;
+	margin: 0 0 1rem;
+}
+
+.tr-service.tr-service-proof .tr-proof-heading-row h2 {
+	margin: 0;
+	flex: 0 1 auto;
+	color: #121212;
+}
+
+.tr-service.tr-service-proof .tr-proof-heading-row .tr-kat-claim-badge {
+	flex: 0 0 auto;
+	align-self: center;
+}
+
+.tr-service.tr-service-proof .tr-kat-claim-badge {
+	display: inline-block;
+	padding: 0.25rem 0.75rem;
+	border-radius: 999px;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	line-height: 1.25;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	color: #1e3a8a;
+	background-color: #dbeafe;
+	vertical-align: baseline;
+}
+
+.tr-service.tr-service-proof h2 {
+	color: #121212;
+}
+
+.tr-service.tr-service-proof .tr-proof-lead {
+	max-width: 42rem;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #595c66;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.95rem;
+	line-height: 1.65;
+}
+
+.tr-service.tr-service-proof .tr-proofs {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.25rem;
+	margin-top: 2.25rem;
+	align-items: stretch;
+}
+
+.tr-service.tr-service-proof .tr-proofs.tr-proofs--text {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 960px) {
+	.tr-service.tr-service-proof .tr-proofs.tr-proofs--text {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 560px) {
+	.tr-service.tr-service-proof .tr-proofs,
+	.tr-service.tr-service-proof .tr-proofs.tr-proofs--text {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+.tr-service.tr-service-proof .tr-proof-card {
+	background: #1a1c23;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
+	padding: 1.25rem 1.2rem 1.35rem;
+	box-sizing: border-box;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.tr-service.tr-service-proof .tr-proof-card__shot {
+	width: 100%;
+	max-width: none;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 1rem;
+	height: auto !important;
+	aspect-ratio: 7 / 3;
+	min-height: 0;
+	border-radius: 8px;
+	border: 1px dashed rgba(255, 255, 255, 0.22);
+	background: #1a1c23 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	padding: 0.5rem;
+	box-sizing: border-box;
+}
+
+.tr-service.tr-service-proof .tr-proof-card__shot:has(.tr-proof-card__img) {
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.1);
+	padding: 0;
+}
+
+.tr-service.tr-service-proof .tr-proof-card__shot-placeholder {
+	color: rgba(255, 255, 255, 0.55);
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.72rem;
+	line-height: 1.45;
+	text-align: center;
+	padding: 0 0.75rem;
+}
+
+.tr-service.tr-service-proof .tr-proof-card__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	min-height: 0;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 8px;
+}
+
+.tr-service.tr-service-proof .tr-proof-card h3 {
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-weight: 500;
+	letter-spacing: -0.02em;
+	font-size: clamp(1.05rem, 1.6vw, 1.2rem) !important;
+	line-height: 1.25 !important;
+	color: #ffffff !important;
+	margin: 0 0 0.85rem;
+}
+
+.tr-service.tr-service-proof .tr-proof-card__meta p {
+	margin: 0 0 0.35rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.82rem;
+	line-height: 1.55;
+	color: rgba(255, 255, 255, 0.62) !important;
+}
+
+.tr-service.tr-service-proof .tr-proof-card__meta p:last-child {
+	margin-bottom: 0;
+}
+
+.tr-service.tr-service-proof .tr-proof-card--text h3 {
+	margin-bottom: 0;
+}
+
+.tr-service.tr-service-proof .tr-proof-card--text:has(.tr-proof-card__period) h3 {
+	margin-bottom: 0.2rem;
+}
+
+.tr-service.tr-service-proof .tr-proof-card__kicker {
+	margin: 0 0 0.5rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.78rem;
+	font-weight: 500;
+	line-height: 1.45;
+	color: #f16a4e !important;
+}
+
+.tr-service.tr-service-proof .tr-proof-card--text .tr-proof-card__period {
+	margin: 0 0 0.85rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.72rem;
+	line-height: 1.45;
+	color: #6a6d75 !important;
+}
+
+.tr-service.tr-service-proof .tr-proof-card--text:has(.tr-proof-card__period) .tr-proof-card__period {
+	margin-top: -0.05rem;
+}
+
+.tr-service.tr-service-proof .tr-proof-card__metric {
+	margin: 0 0 0.5rem;
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-size: clamp(3rem, 6.5vw, 4.25rem) !important;
+	font-weight: 500;
+	line-height: 1 !important;
+	letter-spacing: -0.04em;
+	color: #f16a4e !important;
+}
+
+.tr-service.tr-service-proof .tr-proof-card__detail {
+	margin: 0;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.88rem;
+	line-height: 1.55;
+	color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.tr-service.tr-service-proof .tr-proof-card__footnote {
+	margin: 0.85rem 0 0;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.78rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.tr-service.tr-service-proof .tr-proof-card__pending {
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	align-self: stretch;
+	width: 100%;
+	min-height: 12.5rem;
+	margin: 0.25rem 0 0;
+	padding: 1.5rem 1.25rem;
+	border: 1px dashed rgba(255, 255, 255, 0.22);
+	border-radius: 8px;
+	background: transparent;
+	color: rgba(255, 255, 255, 0.55);
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.88rem;
+	line-height: 1.45;
+	text-align: center;
+}
+
+.tr-service.tr-service-proof .tr-proof-card--text:has(.tr-proof-card__pending) {
+	padding-bottom: 1.2rem;
+}
+
+.tr-service.tr-service-proof .tr-proof-card--text:not(:has(.tr-proof-card__metric)):not(:has(.tr-proof-card__pending)) h3 {
+	font-size: clamp(0.95rem, 1.4vw, 1.05rem) !important;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.tr-service.tr-service-proof .tr-proof-card--text:has(.tr-proof-card__pending) h3 {
+	margin-bottom: 0.65rem;
+}
+
+/* “What have we learned about AI discoverability?” — Shorts grid (Figma) */
+.tr-service.tr-service-learn {
+	text-align: left;
+}
+
+.tr-service.tr-service-learn .tr-learn-inner > .tr-learn-intro,
+.tr-service.tr-service-learn .tr-learn-inner > .tr-videos {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.tr-service.tr-service-learn .tr-learn-intro {
+	margin-bottom: 0;
+}
+
+.tr-service.tr-service-learn .tr-learn-intro > h2 {
+	margin: 0 0 0.85rem;
+	max-width: 36rem;
+}
+
+.tr-service.tr-service-learn .tr-learn-intro__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	gap: 1.25rem 2rem;
+	flex-wrap: wrap;
+}
+
+.tr-service.tr-service-learn .tr-learn-channel {
+	flex: 0 0 auto;
+	color: #c8361f !important;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-weight: 700;
+	font-size: 0.85rem;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	white-space: nowrap;
+}
+
+.tr-service.tr-service-learn .tr-learn-channel:hover,
+.tr-service.tr-service-learn .tr-learn-channel:focus-visible {
+	color: #a82d18 !important;
+}
+
+.tr-service.tr-service-learn .tr-learn-lead {
+	flex: 1 1 min(42rem, 100%);
+	max-width: 42rem;
+	margin: 0;
+	color: #3c4048;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.95rem;
+	line-height: 1.65;
+}
+
+.tr-service.tr-service-learn .tr-videos {
+	display: grid;
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+	gap: 1rem;
+	margin-top: 2rem;
+	align-items: stretch;
+}
+
+.tr-service.tr-service-learn .tr-learn-note {
+	margin: 1.25rem 0 0;
+	max-width: 42rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.75rem;
+	line-height: 1.55;
+	color: #6a6d75;
+}
+
+.tr-service.tr-service-learn .tr-video {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	height: 100%;
+}
+
+.tr-service.tr-service-learn .tr-video__thumb {
+	flex: 0 0 auto;
+	display: block;
+	position: relative;
+	aspect-ratio: 2 / 3;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #1a1c20;
+	text-decoration: none;
+}
+
+.tr-service.tr-service-learn .tr-video__thumb--placeholder {
+	background: var(--tr-section-warm);
+}
+
+.tr-service.tr-service-learn .tr-video__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.tr-service.tr-service-learn .tr-video__badge {
+	position: absolute;
+	left: 0.45rem;
+	bottom: 0.45rem;
+	padding: 0.2rem 0.45rem;
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.82);
+	color: #ffffff;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.62rem;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+}
+
+.tr-service.tr-service-learn .tr-video h3 {
+	flex: 1 1 auto;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.78rem !important;
+	line-height: 1.35 !important;
+	letter-spacing: -0.01em !important;
+	margin: 0.65rem 0 0;
+	min-height: calc(0.78rem * 1.35 * 2);
+	font-weight: 700 !important;
+	color: #121418 !important;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+.tr-service.tr-service-learn .tr-video__links {
+	flex: 0 0 auto;
+	margin-top: 0.45rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.72rem;
+	min-height: 1.15rem;
+}
+
+.tr-service.tr-service-learn .tr-video__links a {
+	font-weight: 600;
+	text-decoration: none;
+	color: #c8361f !important;
+}
+
+.tr-service.tr-service-learn .tr-video__links a:hover,
+.tr-service.tr-service-learn .tr-video__links a:focus-visible {
+	color: #a82d18 !important;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.tr-service.tr-service-learn .tr-video__thumb.js-tr-video-watch {
+	cursor: pointer;
+}
+
+html.tr-video-modal-open {
+	overflow: hidden;
+}
+
+.tr-video-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.25rem;
+	box-sizing: border-box;
+}
+
+.tr-video-modal[hidden] {
+	display: none !important;
+}
+
+.tr-video-modal__backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(18, 20, 24, 0.72);
+}
+
+.tr-video-modal__panel {
+	position: relative;
+	z-index: 1;
+	--tr-short-w: min(405px, calc((100dvh - 6.5rem) * 9 / 16), calc(100vw - 2.5rem));
+	width: var(--tr-short-w);
+	max-width: calc(100vw - 2.5rem);
+	max-height: calc(100dvh - 2.5rem);
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	background: #121317;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+	overflow: hidden;
+}
+
+.tr-video-modal__close {
+	position: absolute;
+	top: 0.45rem;
+	right: 0.45rem;
+	z-index: 2;
+	width: 2rem;
+	height: 2rem;
+	border: 0;
+	border-radius: 999px;
+	background: rgba(0, 0, 0, 0.55);
+	color: #ffffff;
+	font-size: 1.35rem;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.tr-video-modal__close:hover,
+.tr-video-modal__close:focus-visible {
+	background: rgba(0, 0, 0, 0.8);
+	outline: 2px solid #f16a4e;
+	outline-offset: 2px;
+}
+
+.tr-video-modal__title {
+	margin: 0;
+	padding: 0.85rem 2.75rem 0.65rem 1rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.82rem;
+	line-height: 1.4;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.88);
+	box-sizing: border-box;
+}
+
+.tr-video-modal__frame {
+	flex-shrink: 0;
+	width: 100%;
+	aspect-ratio: 9 / 16;
+	height: auto;
+	max-height: calc(100dvh - 6.5rem);
+	background: #000;
+	overflow: hidden;
+}
+
+.tr-video-modal__frame iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* Request Discovery Assessment + FAQ (Figma) */
+.tr-service.tr-service-assessment {
+	text-align: left;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-inner {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-bottom {
+	display: grid;
+	grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+	gap: clamp(2rem, 4vw, 3.75rem);
+	align-items: start;
+}
+
+.tr-service.tr-service-assessment .tr-form-card {
+	background: #ffffff;
+	border: 1px solid rgba(18, 20, 24, 0.1);
+	border-radius: 12px;
+	padding: 1.85rem 1.75rem 1.95rem;
+	box-sizing: border-box;
+}
+
+.tr-service.tr-service-assessment .tr-form-card > h2 {
+	margin: 0 0 0.65rem;
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	font-size: clamp(1.55rem, 2.4vw, 1.85rem) !important;
+	line-height: 1.12 !important;
+	color: #121418;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-faq > h2 {
+	margin: 0 0 1.35rem;
+	padding-top: 1.85rem;
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	font-size: clamp(1.85rem, 3.5vw, 2.5rem) !important;
+	line-height: 1.08 !important;
+	color: #121418;
+}
+
+.tr-service.tr-service-assessment .tr-form-lead {
+	margin: 0 0 0.25rem;
+	max-width: 26rem;
+	color: #3c4048;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.92rem;
+	line-height: 1.65;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-checklist {
+	list-style: none;
+	margin: 0.85rem 0 0;
+	padding: 0;
+	max-width: 28rem;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-checklist li {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	margin-bottom: 0.5rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.92rem;
+	line-height: 1.55;
+	color: #121418;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-checklist li:last-child {
+	margin-bottom: 0;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-checklist .tr-check-mark {
+	flex: 0 0 1em;
+	color: var(--tr-accent-dark, #c8361f);
+	font-weight: 700;
+	line-height: 1.55;
+	text-align: center;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-checklist .tr-check-text {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-booking {
+	margin-top: 1.35rem;
+	width: 100%;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-booking .tr-btn-row {
+	width: 100%;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-booking .tr-btn-primary {
+	width: 100%;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-booking .tr-btn-primary .wp-block-button__link {
+	display: block;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-form label {
+	display: block;
+	margin: 1rem 0 0.4rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.78rem;
+	font-weight: 700;
+	color: #121418;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-form label:first-of-type {
+	margin-top: 1.15rem;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-form input,
+.tr-service.tr-service-assessment .tr-assessment-form textarea {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid rgba(18, 20, 24, 0.14);
+	border-radius: 4px;
+	padding: 0.72rem 0.75rem;
+	font: inherit;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.88rem;
+	line-height: 1.45;
+	background: #ffffff;
+	color: #121418;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-form textarea {
+	min-height: 96px;
+	resize: vertical;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-form input:focus,
+.tr-service.tr-service-assessment .tr-assessment-form textarea:focus {
+	outline: 2px solid #f16a4e;
+	outline-offset: 0;
+	border-color: transparent;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-form button {
+	display: block;
+	width: 100%;
+	margin-top: 1.15rem;
+	padding: 0.85rem 1.1rem;
+	border: 0;
+	border-radius: var(--tr-btn-radius, 6px);
+	background: var(--tr-accent-dark, #c8361f);
+	color: #ffffff;
+	font: inherit;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.88rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.tr-service.tr-service-assessment .tr-assessment-form button:hover,
+.tr-service.tr-service-assessment .tr-assessment-form button:focus-visible {
+	background: var(--tr-accent-hover, #ea6c40);
+}
+
+.tr-service.tr-service-assessment .tr-form-help {
+	margin: 0.85rem 0 0;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.82rem;
+	line-height: 1.55;
+	color: #3c4048;
+}
+
+.tr-service.tr-service-assessment .tr-form-help a {
+	color: #c8361f !important;
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.tr-service.tr-service-assessment .tr-form-help__phone {
+	white-space: nowrap;
+}
+
+.tr-service.tr-service-assessment .tr-form-help a:hover,
+.tr-service.tr-service-assessment .tr-form-help a:focus-visible {
+	color: #a82d18 !important;
+}
+
+.tr-service.tr-service-assessment .tr-form-status {
+	margin: 0 0 1rem;
+}
+
+.tr-service.tr-service-assessment .tr-faq-list {
+	margin: 0;
+}
+
+.tr-service.tr-service-assessment .tr-faq-list article {
+	padding: 1.05rem 0;
+}
+
+.tr-service.tr-service-assessment .tr-faq-list article:first-child {
+	padding-top: 0;
+}
+
+.tr-service.tr-service-assessment .tr-faq-list article + article {
+	border-top: 1px solid rgba(18, 20, 24, 0.12);
+}
+
+.tr-service.tr-service-assessment .tr-faq-list article:last-child {
+	border-bottom: 1px solid rgba(18, 20, 24, 0.12);
+}
+
+.tr-service.tr-service-assessment .tr-faq-list h3 {
+	margin: 0 0 0.45rem;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.92rem !important;
+	font-weight: 700 !important;
+	line-height: 1.4 !important;
+	letter-spacing: -0.01em !important;
+	color: #121418 !important;
+}
+
+.tr-service.tr-service-assessment .tr-faq-list p {
+	margin: 0;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.88rem;
+	line-height: 1.6;
+	color: #3c4048 !important;
+}
+
+.tr-measure {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.25rem;
+	margin-top: 1.5rem;
+}
+
+.tr-measure article,
+.tr-include article,
+.tr-step-card,
+.tr-proof-card,
+.tr-form-card {
+	border-radius: 12px;
+	padding: 1.35rem 1.3rem 1.4rem;
+}
+
+.tr-measure article,
+.tr-include article,
+.tr-step-card.is-light,
+.tr-form-card {
+	background: #fff;
+	border: 1px solid rgba(18, 20, 24, 0.08);
+}
+
+.tr-measure h3,
+.tr-include h3,
+.tr-step-card h3,
+.tr-proof-card h3 {
+	font-size: 1.2rem !important;
+	margin: 0 0 0.55rem;
+}
+
+.tr-measure p,
+.tr-include p,
+.tr-step-card p,
+.tr-proof-card p {
+	margin: 0;
+	color: #a6a8b1;
+	font-size: 0.85rem;
+	line-height: 1.55;
+}
+
+.tr-include {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.tr-include a {
+	color: #b8321c !important;
+	font-weight: 600;
+}
+
+.tr-steps {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.tr-kicker {
+	display: block;
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	color: #b8321c;
+	margin-bottom: 0.45rem;
+}
+
+.tr-step-card.is-dark {
+	background: #121212;
+	color: #a6a8b1;
+}
+
+.tr-step-card.is-dark .tr-kicker {
+	color: #f16a4e;
+}
+
+.tr-step-card.is-dark h3,
+.tr-step-card.is-dark p,
+.tr-proof-card h3,
+.tr-proof-card p {
+	color: #a6a8b1 !important;
+}
+
+.tr-proof-card p,
+.tr-step-card.is-dark p {
+	color: #a6a8b1 !important;
+}
+
+.tr-note {
+	margin-top: 1rem;
+	font-size: 0.75rem;
+	color: #a6a8b1;
+}
+
+.tr-proofs {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.tr-proof-card {
+	background: #1a1c20;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tr-proof-card__shot {
+	height: 92px;
+	border-radius: 8px;
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+		repeating-linear-gradient(90deg, #2a2d33 0 8px, #23262b 8px 16px);
+	margin-bottom: 0.9rem;
+	display: grid;
+	place-items: center;
+	color: #a6a8b1;
+	font-size: 0.72rem;
+}
+
+.tr-bottom {
+	display: grid;
+	grid-template-columns: 0.9fr 1.1fr;
+	gap: 3rem;
+	align-items: start;
+}
+
+.tr-form-card label {
+	display: block;
+	font-size: 0.72rem;
+	font-weight: 600;
+	margin: 0.85rem 0 0.35rem;
+}
+
+.tr-form-card input,
+.tr-form-card textarea {
+	width: 100%;
+	border: 1px solid rgba(18, 20, 24, 0.16);
+	border-radius: 4px;
+	padding: 0.7rem 0.75rem;
+	font: inherit;
+	font-size: 0.85rem;
+	background: #fff;
+	color: #121418;
+}
+
+.tr-form-card textarea {
+	min-height: 88px;
+	resize: vertical;
+}
+
+.tr-form-card input:focus,
+.tr-form-card textarea:focus {
+	outline: 2px solid #f16a4e;
+	border-color: transparent;
+}
+
+.tr-form-card button {
+	margin-top: 1rem;
+	background: var(--tr-accent-dark);
+	color: #fff;
+	border: 0;
+	border-radius: var(--tr-btn-radius);
+	padding: 0.8rem 1.1rem;
+	font: inherit;
+	font-size: 0.85rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.tr-form-card button:hover {
+	background: var(--tr-accent-hover, #ea6c40);
+}
+
+.tr-form-card .tr-form-help {
+	margin-top: 0.75rem;
+	font-size: 0.85rem;
+	line-height: 1.5;
+}
+
+.tr-close-links {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--tr-btn-gap, 0.65rem);
+	margin-top: 1.25rem;
+}
+
+.tr-service-close__contact {
+	margin-top: 0;
+}
+
+.tr-hp {
+	position: absolute;
+	left: -9999px;
+}
+
+.tr-form-status {
+	background: #e8ff47;
+	color: #121212;
+	border-radius: 6px;
+	padding: 0.7rem 0.8rem;
+	font-size: 0.85rem;
+	margin: 0 0 0.9rem;
+}
+
+.tr-form-status.is-error {
+	background: #ffe1db;
+}
+
+.tr-faq-list {
+	margin: 0;
+}
+
+.tr-faq-list article {
+	padding: 1rem 0;
+	border-top: 1px solid rgba(18, 20, 24, 0.1);
+}
+
+.tr-faq-list article:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.tr-faq-list h3 {
+	font-size: 0.95rem !important;
+	margin: 0 0 0.4rem;
+	letter-spacing: -0.01em !important;
+}
+
+.tr-faq-list p {
+	margin: 0;
+	color: #a6a8b1;
+	font-size: 0.85rem;
+	line-height: 1.55;
+}
+
+@media (max-width: 781px) {
+	.tr-service.tr-ai-why-section .tr-ai-why-stats {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.tr-service.tr-ai-why-section h2 {
+		max-width: none;
+		font-size: clamp(1.65rem, 6.5vw, 2.5rem);
+	}
+}
+
+@media (max-width: 900px) {
+	.tr-split,
+	.tr-measure,
+	.tr-include,
+	.tr-steps,
+	.tr-proofs,
+	.tr-stats:not(.tr-ai-why-stats),
+	.tr-assessment-bottom,
+	.tr-bottom {
+		grid-template-columns: 1fr;
+	}
+
+	.tr-service.tr-service-close .tr-close-grid {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.tr-service.tr-service-close .tr-close-actions {
+		align-self: flex-end;
+	}
+
+	.tr-service.tr-service-measure .tr-measure {
+		grid-template-columns: 1fr;
+	}
+
+	.tr-service.tr-service-include .tr-include {
+		grid-template-columns: 1fr;
+		row-gap: 2rem;
+	}
+
+	.tr-service.tr-service-work .tr-steps {
+		grid-template-columns: 1fr;
+	}
+
+	.tr-service.tr-service-proof .tr-proofs {
+		grid-template-columns: 1fr;
+	}
+
+	.tr-service.tr-service-assessment .tr-assessment-faq > h2 {
+		padding-top: 0;
+	}
+
+	.tr-service.tr-service-learn .tr-videos {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.tr-monitor {
+		overflow-x: auto;
+	}
+
+	.tr-monitor table {
+		min-width: 520px;
+	}
+}
+
+@media (max-width: 640px) {
+	.tr-service.tr-service-learn .tr-videos {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}

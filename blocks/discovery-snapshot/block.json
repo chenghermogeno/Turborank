@@ -1,0 +1,85 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "turborank/discovery-snapshot",
+	"version": "2.1.0",
+	"title": "Discovery Snapshot",
+	"category": "turborank",
+	"icon": "chart-area",
+	"description": "YouTube-first Discovery Session snapshot card with session deliverables and strategist credit.",
+	"keywords": [ "turborank", "snapshot", "discovery", "youtube" ],
+	"textdomain": "turborank",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Discovery Snapshot"
+		},
+		"meta": {
+			"type": "string",
+			"default": "[Your brand], 20 buyer searches on YouTube and Google, [date range]"
+		},
+		"badge": {
+			"type": "string",
+			"default": "Illustrative sample"
+		},
+		"stat1Label": {
+			"type": "string",
+			"default": "Your brand on YouTube"
+		},
+		"stat1Pre": {
+			"type": "string",
+			"default": "Top 5 for"
+		},
+		"stat1Em": {
+			"type": "string",
+			"default": "9 of 20"
+		},
+		"stat1Foot": {
+			"type": "string",
+			"default": "buyer searches"
+		},
+		"stat2Label": {
+			"type": "string",
+			"default": "Competitor A and B"
+		},
+		"stat2Em": {
+			"type": "string",
+			"default": "Rank for 14"
+		},
+		"stat2Foot": {
+			"type": "string",
+			"default": "of the same 20 searches"
+		},
+		"missedTitle": {
+			"type": "string",
+			"default": "Missed opportunity"
+		},
+		"missedLine": {
+			"type": "string",
+			"default": "“Best [product] for [use case]”: Competitor A ranks #1 and #3. You have no video that answers it."
+		},
+		"moveTitle": {
+			"type": "string",
+			"default": "Move 1 of 3"
+		},
+		"moveText": {
+			"type": "string",
+			"default": "Retitle and repackage [N] existing videos around the buyer searches they already answer."
+		},
+		"strategistCaption": {
+			"type": "string",
+			"default": ""
+		},
+		"ariaLabel": {
+			"type": "string",
+			"default": "Discovery Snapshot illustrative sample"
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ],
+		"multiple": true
+	},
+	"editorScript": "file:./edit.js",
+	"render": "file:./render.php"
+}

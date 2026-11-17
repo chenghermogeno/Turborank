@@ -1,0 +1,1186 @@
+/* About page — mockup page “About” */
+
+.tr-about h2 {
+	font-family: var(--wp--preset--font-family--serif, "Source Serif 4", Georgia, serif);
+	font-weight: 500;
+	letter-spacing: -0.03em;
+	line-height: 1.08;
+	margin: 0 0 1rem;
+	font-size: clamp(2rem, 4vw, 2.85rem);
+	color: #121212;
+}
+
+.tr-about-hero__intro h2 {
+	font-size: clamp(2.5rem, 5vw, 3.7rem);
+	color: #121212;
+}
+
+.tr-about-hero h2,
+.tr-about-close h2 {
+	color: #121212;
+}
+
+.tr-about-timeline h2 {
+	color: #121212;
+}
+
+.tr-about-timeline .tr-timeline-lead {
+	max-width: 38rem;
+	margin-left: max(0px, calc((100% - min(100%, 1080px)) / 2)) !important;
+	margin-right: auto !important;
+	color: #121212;
+}
+
+.tr-about-timeline .tr-timeline h3,
+.tr-about-timeline .tr-timeline p {
+	color: #121212;
+}
+
+.tr-about .tr-em {
+	font-style: italic;
+	font-weight: 500;
+	color: #f16a4e;
+}
+
+.tr-about-hero .tr-split {
+	align-items: start;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 23rem);
+}
+
+.tr-about-hero .tr-glance {
+	max-width: 23rem;
+	width: 100%;
+	justify-self: end;
+}
+
+.tr-about-hero__intro h2 {
+	max-width: min(11.5em, 100%);
+	margin-bottom: clamp(1.5rem, 3vw, 2rem);
+}
+
+.tr-about-hero__intro .tr-lead {
+	max-width: min(34rem, 100%);
+	margin: 0 0 1rem;
+}
+
+.tr-about-hero__intro .tr-lead:last-of-type {
+	margin-bottom: 0;
+}
+
+.tr-about-hero .tr-eyebrow {
+	font-weight: 700;
+}
+
+.tr-glance {
+	background: #1a1c23;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 16px;
+	padding: 1.65rem 1.5rem 0.35rem;
+}
+
+.tr-glance__list {
+	margin: 0;
+}
+
+.tr-glance__title {
+	margin: 0;
+	padding-bottom: 0.5rem;
+	color: #fff;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.3;
+}
+
+.tr-glance__row {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 1rem 1.25rem;
+	align-items: start;
+	padding: 1.15rem 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.tr-glance__row:last-child {
+	padding-bottom: 1.35rem;
+}
+
+.tr-glance__row dt {
+	margin: 0;
+	color: #a6a8b1;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.84rem;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.tr-glance__row dd {
+	margin: 0;
+	color: #fff;
+	text-align: right;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.9rem;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.tr-glance__row:not(.tr-glance__row--stack) dd {
+	white-space: nowrap;
+}
+
+.tr-glance__dd--with-badge {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 0.35rem 0.5rem;
+}
+
+.tr-glance__claim {
+	border: 1px solid rgba(126, 200, 227, 0.55);
+	border-radius: 999px;
+	color: #7ec8e3;
+	flex-shrink: 0;
+	font-size: 0.62rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	line-height: 1;
+	padding: 0.28rem 0.5rem;
+	white-space: nowrap;
+}
+
+.tr-glance__break {
+	display: none;
+}
+
+.tr-about-hero .tr-glance__row:first-of-type dd {
+	white-space: normal;
+	text-align: right;
+	max-width: 9.5rem;
+	justify-self: end;
+	line-height: 1.35;
+}
+
+@media (min-width: 901px) {
+	.tr-about-hero .tr-glance__break {
+		display: block;
+	}
+}
+
+.tr-glance__row--stack {
+	grid-template-columns: 1fr;
+	gap: 0.4rem;
+}
+
+.tr-about-hero .tr-glance__row:not(.tr-glance__row--stack) dd {
+	font-size: 0.8125rem;
+}
+
+.tr-glance__row--stack dd {
+	text-align: left;
+	font-weight: 600;
+	line-height: 1.45;
+	max-width: none;
+}
+
+.tr-about-story {
+	--tr-story-accent: #b8321b;
+}
+
+.tr-story {
+	display: grid;
+	grid-template-columns: 1.05fr 0.95fr;
+	gap: 2.5rem 3.5rem;
+	align-items: start;
+}
+
+.tr-about-story .tr-story > div:first-child > p:not(.tr-fine) {
+	color: #3c4048;
+	font-size: 1rem;
+	line-height: 1.55;
+	margin-bottom: 1rem;
+}
+
+.tr-about-story .tr-story > div:first-child > p:not(.tr-fine):last-of-type {
+	margin-bottom: 0.95rem;
+}
+
+.tr-about-story .tr-story-badge {
+	background: rgba(212, 168, 83, 0.22);
+	border-radius: 6px;
+	color: #c47a2a;
+	display: inline-block;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.72rem;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 0.5rem;
+	padding: 0.35rem 0.55rem;
+}
+
+.tr-story p,
+.tr-work p,
+.tr-facts p,
+.tr-person p {
+	color: #a6a8b1;
+	font-size: 0.98rem;
+	line-height: 1.65;
+	margin: 0 0 0.95rem;
+}
+
+.tr-fine {
+	color: #a6a8b1 !important;
+	font-size: 0.78rem !important;
+	margin-top: 1.25rem !important;
+}
+
+.tr-story-video {
+	background: #0a0a0a;
+	border-radius: 14px;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 2rem 1.5rem;
+	gap: 1.1rem;
+}
+
+.tr-about-story .tr-story-video {
+	position: relative;
+	display: block;
+	min-height: 0;
+	aspect-ratio: 16 / 10;
+	padding: 0;
+	overflow: hidden;
+}
+
+.tr-about-story .tr-story-video.tr-story-video--has-thumb {
+	background-color: #0a0a0a;
+	background-size: cover;
+	background-position: center;
+}
+
+.tr-play {
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+	background: var(--tr-accent-dark);
+	display: grid;
+	place-items: center;
+}
+
+.tr-about-story a.tr-story-video {
+	text-decoration: none;
+	color: inherit;
+	transition: opacity 0.15s ease;
+}
+
+.tr-about-story a.tr-story-video:hover {
+	opacity: 0.92;
+}
+
+.tr-about-story a.tr-story-video:focus-visible {
+	outline: 2px solid var(--tr-story-accent);
+	outline-offset: 3px;
+}
+
+.tr-about-story .tr-story-video__yt-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	display: block;
+	width: clamp(3.75rem, 14vw, 4.75rem);
+	line-height: 0;
+}
+
+.tr-about-story .tr-story-video__yt-icon svg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.tr-play span {
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 16px solid #fff;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	margin-left: 4px;
+}
+
+.tr-story-video p {
+	color: #a6a8b1 !important;
+	font-size: 0.82rem !important;
+	margin: 0 !important;
+	max-width: 18rem;
+}
+
+.tr-about-story .tr-story-video p {
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: min(100% - 2.5rem, 22rem);
+	max-width: none;
+	color: rgba(255, 255, 255, 0.42) !important;
+	font-size: 0.8rem !important;
+	line-height: 1.45;
+}
+
+.tr-story-meta {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	align-items: baseline;
+	margin-top: 0.75rem;
+	font-size: 0.82rem;
+	color: #a6a8b1;
+}
+
+.tr-about-story .tr-story-meta {
+	margin-top: 0.85rem;
+	font-size: 0.875rem;
+}
+
+.tr-about-story .tr-story-meta > span {
+	color: #595c66;
+	flex: 1;
+	min-width: 0;
+	padding-right: 1rem;
+}
+
+.tr-about-link {
+	color: var(--tr-accent) !important;
+	font-weight: 700;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.tr-about-story .tr-about-link {
+	color: var(--tr-story-accent) !important;
+	font-weight: 600;
+	text-underline-offset: 0.18em;
+	text-decoration-thickness: 1px;
+	flex-shrink: 0;
+}
+
+.tr-timeline {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 2.25rem;
+	border-top: 2px solid rgba(18, 18, 18, 0.12);
+}
+
+.tr-timeline article {
+	padding: 1.2rem 1.4rem 0 0;
+}
+
+.tr-timeline article:last-child {
+	position: relative;
+	box-shadow: none;
+	margin-top: -2px;
+	padding-top: 1.25rem;
+}
+
+.tr-timeline article:last-child::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background: linear-gradient(135deg, #ea6c40, #e94c6c);
+}
+
+.tr-timeline .tr-year {
+	display: block;
+	font-family: var(--wp--preset--font-family--serif, Georgia, serif);
+	font-size: 1.65rem;
+	font-weight: 500;
+	color: #121212;
+	margin-bottom: 0.85rem;
+}
+
+.tr-about-timeline .tr-timeline article:last-child .tr-year {
+	background: linear-gradient(135deg, #ea6c40, #e94c6c);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #ea6c40;
+}
+
+.tr-timeline h3 {
+	color: #121212;
+	font-size: 0.95rem;
+	margin: 0 0 0.4rem;
+}
+
+.tr-timeline p {
+	color: #121212;
+	font-size: 0.88rem;
+	line-height: 1.5;
+	margin: 0 0 0.75rem;
+}
+
+.tr-belief-lead {
+	max-width: 40rem;
+	color: #a6a8b1;
+	margin: 0 0 1.75rem;
+}
+
+.tr-about-beliefs .tr-belief-lead {
+	max-width: 42rem;
+	color: #3c4048;
+	font-size: 1rem;
+	line-height: 1.55;
+	margin-left: max(0px, calc((100% - min(100%, 1080px)) / 2)) !important;
+	margin-right: auto !important;
+	margin-bottom: 3rem !important;
+}
+
+.tr-beliefs {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.9rem;
+}
+
+.tr-about-beliefs .tr-beliefs {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1080px;
+	margin-left: max(0px, calc((100% - min(100%, 1080px)) / 2));
+	margin-right: auto;
+	margin-bottom: 3rem;
+	gap: 1rem;
+}
+
+.tr-belief {
+	background: #fff;
+	border: 1px solid #e6e2da;
+	border-radius: 16px;
+	padding: 1.3rem 1.15rem 1.45rem;
+}
+
+.tr-about-beliefs .tr-belief {
+	background: linear-gradient(135deg, #ea6c40, #e94c6c);
+	border-color: transparent;
+	border-radius: 14px;
+	padding: 1.5rem 1.35rem 1.6rem;
+}
+
+.tr-belief h3 {
+	font-family: var(--wp--preset--font-family--serif, Georgia, serif);
+	font-size: 1.2rem;
+	font-weight: 600;
+	line-height: 1.25;
+	margin: 0 0 0.65rem;
+}
+
+.tr-about-beliefs .tr-belief h3 {
+	font-size: 1.5rem;
+	font-weight: 400 !important;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+	margin-bottom: 0.75rem;
+	line-height: 1.3;
+}
+
+.tr-belief p {
+	margin: 0;
+	color: #a6a8b1;
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+.tr-about-beliefs .tr-belief p {
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	color: rgba(255, 255, 255, 0.92);
+	font-size: 0.9375rem;
+	line-height: 1.55;
+	text-wrap: pretty;
+}
+
+.tr-about-team {
+	background: #f6f1e7;
+	--tr-team-accent: #b8321b;
+}
+
+.tr-about-team .tr-role {
+	color: var(--tr-team-accent) !important;
+}
+
+.tr-about-team .tr-about-link {
+	color: var(--tr-team-accent) !important;
+}
+
+.tr-team-lead {
+	max-width: 38rem;
+	color: #a6a8b1;
+	margin: 0 0 1.5rem;
+}
+
+.tr-about-team .tr-team-lead {
+	max-width: 42rem;
+	color: #3c4048 !important;
+	font-size: 1rem;
+	line-height: 1.55;
+	margin-left: max(0px, calc((100% - min(100%, 1080px)) / 2)) !important;
+	margin-right: auto !important;
+	margin-bottom: 1.5rem !important;
+}
+
+.tr-about-team .tr-person p:not(.tr-role) {
+	color: #3c4048 !important;
+}
+
+.tr-about-team .tr-founders,
+.tr-about-team .tr-team-grid {
+	gap: 0.85rem;
+}
+
+.tr-about-team .tr-founders {
+	margin-bottom: 1.35rem;
+}
+
+.tr-about-team .tr-person {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	padding: 1.1rem 1.15rem 1.2rem;
+}
+
+.tr-about-team .tr-person__head {
+	display: flex;
+	align-items: center;
+	gap: 0.85rem;
+}
+
+.tr-about-team .tr-person__identity {
+	min-width: 0;
+}
+
+.tr-about-team .tr-person__identity h3 {
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.tr-about-team .tr-person__title-row {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem 0.5rem;
+}
+
+.tr-about-team .tr-person-badge {
+	background: rgba(72, 140, 90, 0.16);
+	border-radius: 999px;
+	color: #2d6a3e;
+	flex-shrink: 0;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.62rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	line-height: 1;
+	padding: 0.28rem 0.5rem;
+	white-space: nowrap;
+}
+
+.tr-about-team .tr-person__photo--placeholder {
+	align-items: center;
+	background: #eceae4;
+	border: 1px dashed #c8c4bb;
+	border-radius: 8px;
+	box-sizing: border-box;
+	color: #8a8680;
+	display: flex;
+	flex-shrink: 0;
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 0.72rem;
+	height: 64px;
+	justify-content: center;
+	width: 64px;
+}
+
+.tr-about-team .tr-person--team .tr-person__title-row h3 {
+	font-size: 1.05rem;
+}
+
+.tr-about-team .tr-person__identity .tr-role {
+	margin: 0.25rem 0 0 !important;
+	font-weight: 600;
+	line-height: 1.35;
+}
+
+.tr-about-team .tr-person__body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.55rem;
+}
+
+.tr-about-team .tr-person__body > p {
+	margin: 0 !important;
+	font-size: 0.9375rem;
+	line-height: 1.55;
+}
+
+.tr-about-team .tr-person__body > .tr-about-link {
+	margin-top: 0.15rem;
+	font-size: 0.875rem;
+}
+
+.tr-about-team .tr-founders .tr-person img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	grid-row: auto;
+}
+
+.tr-about-team .tr-person--team img {
+	width: 64px;
+	height: 64px;
+	border-radius: 8px;
+	grid-row: auto;
+}
+
+.tr-about-team .tr-person--team .tr-person__identity h3 {
+	font-size: 1.05rem;
+}
+
+.tr-about-team .tr-about-note {
+	font-style: italic;
+}
+
+/* Two rows of three equal-width team cards */
+.tr-about-team .tr-team-grid {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1080px;
+	margin-left: max(0px, calc((100% - min(100%, 1080px)) / 2));
+	margin-right: auto;
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.tr-about-team .tr-team-grid > .tr-person {
+	grid-column: span 2;
+}
+
+.tr-founders,
+.tr-team-grid {
+	display: grid;
+	gap: 1rem;
+}
+
+.tr-founders {
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 1.75rem;
+}
+
+.tr-team-label {
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-weight: 700;
+	font-size: 1rem;
+	margin: 0 0 0.85rem;
+}
+
+.tr-team-grid {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.tr-person {
+	background: #fff;
+	border-radius: 16px;
+	padding: 1.35rem 1.25rem 1.45rem;
+	display: grid;
+	grid-template-columns: 96px 1fr;
+	gap: 0.35rem 1rem;
+	align-items: start;
+}
+
+.tr-person img {
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	object-fit: cover;
+	grid-row: 1 / span 4;
+}
+
+.tr-person h3 {
+	font-family: var(--wp--preset--font-family--serif, Georgia, serif);
+	font-size: 1.35rem;
+	font-weight: 600;
+	margin: 0.15rem 0 0.1rem;
+	line-height: 1.2;
+}
+
+.tr-role {
+	color: #f16a4e !important;
+	font-size: 0.82rem !important;
+	font-weight: 700;
+	margin: 0 0 0.55rem !important;
+}
+
+.tr-about-note {
+	font-style: italic;
+	color: #a6a8b1 !important;
+}
+
+.tr-person--team {
+	grid-template-columns: 72px 1fr;
+	align-content: start;
+}
+
+.tr-person--team img {
+	width: 72px;
+	height: 72px;
+	border-radius: 8px;
+}
+
+.tr-person--team h3 {
+	font-size: 1.05rem;
+}
+
+.tr-work {
+	display: grid;
+	grid-template-columns: 1.05fr 0.95fr;
+	gap: 2.5rem 4rem;
+}
+
+.tr-about-work {
+	--tr-work-accent: #b8321b;
+}
+
+.tr-about-work .tr-work {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1080px;
+	margin-left: max(0px, calc((100% - min(100%, 1080px)) / 2));
+	margin-right: auto;
+	grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+	gap: 2.5rem 3.25rem;
+	align-items: start;
+}
+
+.tr-about-work .tr-work__intro > h2 {
+	margin-bottom: 1rem;
+}
+
+.tr-about-work .tr-work-lead {
+	color: #3c4048 !important;
+	font-size: 1rem;
+	line-height: 1.55;
+	max-width: 42rem;
+	margin: 0 0 1.35rem !important;
+	text-wrap: pretty;
+}
+
+.tr-about-work .tr-clients {
+	margin: 0 0 0.65rem;
+	gap: 0.5rem 1.25rem;
+}
+
+.tr-about-work .tr-clients--placeholders {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 0.85rem;
+	margin: 0 0 0.35rem;
+	max-width: 42rem;
+}
+
+.tr-about-work .tr-clients--placeholders li {
+	margin: 0;
+	font-weight: 400;
+}
+
+.tr-about-work .tr-clients__tile {
+	align-items: center;
+	background: #ffffff;
+	border: 1px dashed rgba(18, 19, 23, 0.22);
+	border-radius: 10px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	min-height: 4.25rem;
+	padding: 0.75rem 0.65rem;
+}
+
+.tr-about-work .tr-clients__tile .tr-placeholder {
+	color: #7a7b7f;
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.35;
+	text-align: center;
+}
+
+.tr-about-work .tr-clients li {
+	color: #595c66;
+	font-weight: 600;
+	font-size: 0.9375rem;
+}
+
+.tr-about-work .tr-work__intro > .tr-fine {
+	margin-top: 0 !important;
+	margin-bottom: 1.1rem !important;
+	color: #a6a8b1 !important;
+	font-size: 0.78rem !important;
+}
+
+.tr-about-work .tr-work-cta {
+	margin: 0;
+}
+
+.tr-about-work .tr-work-cta .tr-about-link {
+	color: var(--tr-work-accent) !important;
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 0.18em;
+	text-decoration-thickness: 1px;
+}
+
+.tr-about-work .tr-award-label {
+	color: #121212;
+	font-size: 0.9375rem;
+	font-weight: 700;
+	margin: 0 0 0.65rem;
+}
+
+.tr-about-work .tr-awards + .tr-award-label {
+	margin-top: 1.75rem;
+}
+
+.tr-about-work .tr-awards .tr-award {
+	border-top-color: #e4e0d8;
+	padding: 0.85rem 0;
+	font-size: 0.9375rem;
+}
+
+.tr-about-work .tr-awards .tr-award:last-child {
+	border-bottom: 1px solid #e4e0d8;
+}
+
+.tr-about-work .tr-award a {
+	color: #121212 !important;
+	font-weight: 700;
+	text-decoration: underline;
+	text-underline-offset: 0.15em;
+}
+
+.tr-about-work .tr-award .tr-placeholder {
+	color: #a6a8b1;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+
+.tr-about-work .tr-award--press span {
+	color: #595c66;
+	font-size: 0.875rem;
+	line-height: 1.45;
+}
+
+.tr-clients {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.55rem 1.15rem;
+	list-style: none;
+	padding: 0;
+	margin: 1.25rem 0 0.75rem;
+}
+
+.tr-clients li {
+	color: #a6a8b1;
+	font-weight: 700;
+	font-size: 0.92rem;
+}
+
+.tr-award-label {
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0 0 0.35rem;
+}
+
+.tr-award-label + .tr-award-label,
+.tr-awards + .tr-award-label {
+	margin-top: 1.5rem;
+}
+
+.tr-award {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	align-items: baseline;
+	padding: 0.8rem 0;
+	border-top: 1px solid #e4e0d8;
+	font-size: 0.92rem;
+}
+
+.tr-award a {
+	color: #121212 !important;
+	font-weight: 700;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.tr-placeholder {
+	color: #a6a8b1;
+	text-align: right;
+}
+
+.tr-facts {
+	display: grid;
+	grid-template-columns: 0.7fr 1.3fr;
+	gap: 2rem 3rem;
+}
+
+.tr-about-facts .tr-facts {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1080px;
+	margin-left: max(0px, calc((100% - min(100%, 1080px)) / 2));
+	margin-right: auto;
+	grid-template-columns: minmax(0, 0.34fr) minmax(0, 0.66fr);
+	gap: 2.5rem 3.5rem;
+	align-items: start;
+}
+
+.tr-about.tr-about-facts {
+	padding-top: 5.5rem !important;
+	padding-bottom: 5.5rem !important;
+}
+
+.tr-about-facts .tr-facts__intro h2 {
+	margin-bottom: 0.85rem;
+}
+
+.tr-about-facts .tr-facts-lead {
+	color: #595c66 !important;
+	font-size: 1rem;
+	line-height: 1.55;
+	margin: 0 !important;
+	max-width: 15rem;
+}
+
+.tr-about-facts .tr-fact {
+	border-top: 2px solid #e4e0d8;
+	padding: 1.15rem 0;
+}
+
+.tr-about-facts .tr-fact:last-child {
+	border-bottom: 2px solid #e4e0d8;
+}
+
+.tr-about-facts .tr-fact h3 {
+	font-family: var(--wp--preset--font-family--sans, Manrope, sans-serif);
+	font-size: 1rem;
+	font-weight: 700;
+	color: #121212;
+	margin: 0 0 0.5rem;
+	letter-spacing: -0.01em;
+}
+
+.tr-about-facts .tr-fact p {
+	margin: 0 !important;
+	color: #3c4048 !important;
+	font-size: 0.9375rem;
+	line-height: 1.55;
+	text-wrap: pretty;
+}
+
+.tr-facts > p {
+	color: #a6a8b1;
+	max-width: 16rem;
+}
+
+.tr-fact {
+	padding: 1.05rem 0;
+	border-top: 1px solid #e0dcd4;
+}
+
+.tr-fact:last-child {
+	border-bottom: 1px solid #e0dcd4;
+}
+
+.tr-fact h3 {
+	font-size: 1rem;
+	margin: 0 0 0.35rem;
+}
+
+.tr-fact p {
+	margin: 0;
+	color: #a6a8b1;
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+.tr-about.tr-about-close.tr-service-close.tr-service-close--light {
+	background: #ffffff !important;
+	background-color: #ffffff !important;
+}
+
+.tr-about-close:not(.tr-service-close) .tr-about-cta {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+}
+
+.tr-about-close:not(.tr-service-close) h2 {
+	max-width: 16ch;
+	margin-bottom: 0.75rem;
+}
+
+.tr-about-close:not(.tr-service-close) .tr-lead {
+	color: #a6a8b1;
+	margin: 0;
+}
+
+.tr-about-cta__actions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--tr-btn-gap, 0.65rem);
+	flex-shrink: 0;
+}
+
+.tr-about-cta__actions .wp-block-button__link {
+	border-radius: var(--tr-btn-radius) !important;
+	padding: 0.95rem 1.4rem !important;
+}
+
+.tr-about-cta__contact {
+	margin: 0;
+	font-size: 0.85rem;
+	line-height: 1.5;
+	color: #a6a8b1;
+}
+
+.tr-about-cta__contact:not(.tr-contact-muted) a {
+	color: #fff !important;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.tr-about-cta__contact:not(.tr-contact-muted) a:hover,
+.tr-about-cta__contact:not(.tr-contact-muted) a:focus-visible {
+	color: #fff !important;
+	opacity: 0.85;
+}
+
+.tr-is-about .tr-nav a[href="/about/"] {
+	color: var(--tr-accent, #f16a4e) !important;
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	text-decoration-thickness: 2px;
+}
+
+@media (max-width: 900px) {
+	.tr-story,
+	.tr-work,
+	.tr-about-work .tr-work,
+	.tr-facts {
+		grid-template-columns: 1fr;
+	}
+
+	.tr-about-work .tr-work {
+		gap: 2rem;
+	}
+
+	.tr-about-work .tr-clients--placeholders {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+	.tr-about-hero .tr-split,
+	.tr-founders {
+		grid-template-columns: 1fr;
+	}
+
+	.tr-about-hero__intro h2 br,
+	.tr-about-hero__intro .tr-lead br {
+		display: none;
+	}
+
+	.tr-about-hero__intro h2,
+	.tr-about-hero__intro .tr-lead {
+		max-width: none;
+	}
+
+	.tr-about-hero .tr-glance {
+		max-width: none;
+		justify-self: stretch;
+	}
+
+	.tr-about-hero .tr-glance__row:not(.tr-glance__row--stack) {
+		grid-template-columns: 1fr;
+		gap: 0.35rem;
+	}
+
+	.tr-about-hero .tr-glance__row:not(.tr-glance__row--stack) dd {
+		white-space: normal;
+		text-align: left;
+		font-size: 0.9rem;
+	}
+
+	.tr-glance__dd--with-badge {
+		justify-content: flex-start;
+	}
+
+	.tr-beliefs,
+	.tr-team-grid,
+	.tr-timeline {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.tr-about-team .tr-team-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.tr-about-team .tr-team-grid > .tr-person {
+		grid-column: span 1;
+	}
+
+	.tr-about-team .tr-team-grid > .tr-person:last-child:nth-child(odd) {
+		grid-column: 1 / -1;
+	}
+
+	.tr-about-close:not(.tr-service-close) .tr-about-cta {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.tr-about-cta__actions,
+	.tr-about-cta__contact {
+		text-align: left;
+	}
+
+	.tr-glance__row dd,
+	.tr-placeholder {
+		text-align: left;
+	}
+}
+
+@media (max-width: 640px) {
+	.tr-beliefs,
+	.tr-team-grid,
+	.tr-timeline {
+		grid-template-columns: 1fr;
+	}
+
+	.tr-about-team .tr-team-grid > .tr-person {
+		grid-column: auto;
+	}
+
+	.tr-about-team .tr-person__head {
+		align-items: flex-start;
+	}
+
+	.tr-timeline article:last-child {
+		margin-top: 0;
+		padding-top: 1.25rem;
+	}
+}
